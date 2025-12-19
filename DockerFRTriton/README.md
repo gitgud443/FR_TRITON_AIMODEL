@@ -13,6 +13,9 @@ Clone repo, then -
 Go to /DockerFRTriton on visual studio then run with :
 
 ````
+python ./convert_to_onnx.py
+python ./export_detector.py
+
 docker build -t fr-triton -f Docker/Dockerfile .
 docker run --rm -p 8000:8000 -p 8001:8001 -p 8002:8002 -p 3000:3000 fr-triton
 ````
